@@ -39,7 +39,8 @@ function getMarkdownLocation() {
   var markdownLocation = "";  
 
   if (urlArguments['markdown']) {
-    markdownLocation = urlArguments['markdown'];
+    markdownLocation = urlArguments['markdown'].replace(/\.\./g, "0");
+    markdownLocation = "./presentations/" + markdownLocation;
   } else if (urlArguments['url']) {
     markdownLocation = urlArguments['url'];
   } else if (urlArguments['gh-scope'] && urlArguments['gh-file']) {
@@ -53,7 +54,7 @@ function getMarkdownLocation() {
   if (!(markdownLocation.endsWith(".md") || markdownLocation.endsWith(".MD"))) {
     markdownLocation = markdownLocation + ".md";
   }
-
+  
   return markdownLocation;
 }
 
