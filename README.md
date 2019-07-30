@@ -1,10 +1,8 @@
-[![Build Status](https://travis-ci.com/sara-sabr/ITStrategy.svg?branch=master)](https://travis-ci.com/sara-sabr/ITStrategy)
+([Français](#la-description))
 
-([Français](#strategie-ti))
+## Description
 
-## IT Strategy
-
-Workspace to develop an IT Strategy
+Presentation framekwork for GitHub pages used by the SABA-SABR oraganization. 
 
 ### Content
 
@@ -32,9 +30,9 @@ See [Contributing](./CONTRIBUTING.md) for all the instructions required to on us
 
 ______________________
 
-## Stratégie TI
+## La description
 
-Espace de travail pour développer une stratégie TI
+... Translate please ...
 
 ### Contenu
 
