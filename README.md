@@ -4,14 +4,6 @@
 
 Presentation framekwork for GitHub pages used by the SABA-SABR oraganization. 
 
-### Content
-
-In this repository, you will find our work in progress, list of reference material and our presentations.
-
-If you want to have a more user-friendly interface, you can navigate to the link at the top to view the "published content", material that is still in draft but that we have spent a bit more time refining.
-
-We've also set up a few CI tests on the project in order to keep our content clean but also to showcase how powerful these open collaboration tools can be to maintain a project, whether it is simple text files or source code.
-
 ### How to Contribute
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -33,14 +25,6 @@ ______________________
 ## La description
 
 ... Translate please ...
-
-### Contenu
-
-Dans ce répertoire, vous trouverez nos travaux en cours, la liste des documents de référence et nos présentations.
-
-Si vous voulez avoir une interface plus conviviale, vous pouvez naviguer vers le lien en haut pour voir le "contenu publié", matériel qui est encore à l'état d'ébauche mais sur lequel nous avons passé un peu plus de temps à affiner.
-
-Nous avons également mis en place quelques tests CI sur le projet afin de garder notre contenu propre, mais aussi de démontrer la puissance de ces outils de collaboration ouverte pour maintenir un projet, qu'il s'agisse de simples fichiers texte ou de code source.
 
 ### Comment contribuer
 
