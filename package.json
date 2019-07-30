@@ -1,7 +1,7 @@
 {
-  "name": "itstrategy",
+  "name": "util-presentation",
   "version": "0.0.1",
-  "description": "A repo to maintain our documentation around IT Strategy",
+  "description": "A repo for helping other repo's host repositories",
   "main": "index.js",
   "scripts": {
     "link-check": "node link-check.js",
@@ -11,19 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sara-sabr/ITStrategy.git"
+    "url": "git+https://github.com/sara-sabr/util-presentation.git"
   },
   "keywords": [
-    "strategy",
     "documentation",
-    "collaboration"
+    "presentation"
   ],
   "author": "Guillaume Charest",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sara-sabr/ITStrategy/issues"
+    "url": "https://github.com/sara-sabr/util-presentation/issues"
   },
-  "homepage": "https://github.com/sara-sabr/ITStrategy#readme",
+  "homepage": "https://github.com/sara-sabr/util-presentation#readme",
   "devDependencies": {
     "chalk": "^2.4.2",
     "cspell": "^3.2.8",
