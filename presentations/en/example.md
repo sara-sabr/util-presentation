@@ -4,6 +4,6 @@
 
 ---
 
-# Page 2
+## Page 2
 
 ![Lorem Ipsum](https://www.lipsum.com/images/banners/grey_728x90.gif)
