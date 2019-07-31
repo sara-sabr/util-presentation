@@ -10,6 +10,12 @@ permalink: /presentation.html
 </section>
 
 <script>
+
+var whitelist = {
+  'allowedUrls' : ['https://raw.githubusercontent.com/sara-sabr/'],
+  'allowedGitScope' : ['sara-sabr']
+};
+
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -22,7 +28,7 @@ function getUrlParam(parameter, defaultvalue){
   var urlparameter = defaultvalue;
   if(window.location.href.indexOf(parameter) > -1){
     urlparameter = getUrlVars()[parameter];
-    }
+  }
   return urlparameter;
 }
 
@@ -37,19 +43,44 @@ function getUrlParam(parameter, defaultvalue){
 function getMarkdownLocation() {
   var urlArguments = getUrlVars();
   var markdownLocation = "";  
+  var validWhitelist = false;
 
   if (urlArguments['markdown']) {
-    markdownLocation = urlArguments['markdown'].replace(/\.\./g, "0");
-    markdownLocation = "./presentations/" + markdownLocation;
+    markdownLocation = urlArguments['markdown'];
+    markdownLocation = "presentations/" + markdownLocation;
+    validWhitelist = true;
   } else if (urlArguments['url']) {
     markdownLocation = urlArguments['url'];
+    markdownLocation = decodeURI(markdownLocation);
+
+    whitelist['allowedUrls'].forEach(function (item, index) {
+      if (markdownLocation.startsWith(item)) {
+        validWhitelist = true;
+        return;
+      }      
+    });
+
   } else if (urlArguments['gh-scope'] && urlArguments['gh-file']) {
     var branch = urlArguments['gh-branch'] ?  urlArguments['gh-branch'] : 'master';
-    markdownLocation = "https://raw.githubusercontent.com/" + urlArguments['gh-scope'] + "/" + branch + "/" + urlArguments['gh-file'];
-  } else {
+    var scope = urlArguments['gh-scope'];
+    scope = decodeURI(scope);
+
+    whitelist['allowedGitScope'].forEach(function (item, index) {
+      if (scope.startsWith(item)) {
+        validWhitelist = true;
+        return;
+      }      
+    });
+
+    markdownLocation = "https://raw.githubusercontent.com/" + scope + "/" + branch + "/" + urlArguments['gh-file'];
+  } 
+  
+  if (!validWhitelist) {
     alert('Invalid markdown file provided.');
     return "";
   }
+
+  markdownLocation = markdownLocation.replace(/\.\./g, "disallowed");
 
   if (!(markdownLocation.endsWith(".md") || markdownLocation.endsWith(".MD"))) {
     markdownLocation = markdownLocation + ".md";
