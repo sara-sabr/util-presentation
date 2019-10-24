@@ -15,8 +15,8 @@ exclude: ["wip-tec", "CONTRIBUTING.md", "cspell.json", "LICENSE", "link-check.js
 
 # i18n
 description:
-  en: Working in the open! Our work in progress, list of reference material and presentations.
-  fr: Travailler ouvertement! Nos travaux en cours, liste de documents de références et présentations.
+  en: This is a tool to host markdown presentations for the Strategy, Architecture and Business Relationship Directorate.
+  fr: Ceci est un outil pour héberger des présentations "markdown" pour le directorat Stratégie, Architecture et Relations d'affaires.
 home:
   en: Home
   fr: Accueil
@@ -26,9 +26,6 @@ index:
 language:
   en: English
   fr: Français
-subtitle:
-  en: Be the catalysts of change within IITB to lay the path for the evolution of ESDC's digital services.
-  fr: Être les catalyseurs du changement au sein de la DGIIT pour préparer la voie à l'évolution des services numériques de EDSC.
 title:
   en: SABR Presentation Utility
   fr: Utilitaire de présentation SARA
