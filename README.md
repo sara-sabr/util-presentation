@@ -1,4 +1,4 @@
-([Français](#la-description))
+([Français](#description-1))
 
 ## Description
 
@@ -22,9 +22,9 @@ See [Contributing](./CONTRIBUTING.md) for all the instructions required to on us
 
 ______________________
 
-## La description
+## Description
 
-... Translate please ...
+Outil de présentation des pages GitHub utilisées par l'organisation SABA-SABR.
 
 ### Comment contribuer
 
