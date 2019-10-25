@@ -25,5 +25,6 @@ Exemple utilisant un URL qualifé en paramètre:
 
 ```html
 https://raw.githubusercontent.com/sara-sabr/ITStrategy/master/presentations/en/2019-11-12-OSS-Using.md
+```
 
 Note : Cet utilitaire est basé sur les projets de logiciels libres [Reveal.js](https://revealjs.com/#/https://revealjs.com/#/) et [Jekyll](https://jekyllrb.com/).
