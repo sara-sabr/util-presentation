@@ -76,7 +76,6 @@ function getMarkdownLocation() {
   } 
   
   if (!validWhitelist) {
-    alert('Invalid markdown file provided.');
     return "";
   }
 
@@ -91,5 +90,9 @@ function getMarkdownLocation() {
 
 var mdFile = getMarkdownLocation();
 
-document.getElementById("markdown-slides").setAttribute("data-markdown", mdFile); 
+if (mdFile === "") {
+  document.getElementById("markdown-slides").removeAttribute("data-markdown"); 
+} else {
+  document.getElementById("markdown-slides").setAttribute("data-markdown", mdFile); 
+}
 </script>
