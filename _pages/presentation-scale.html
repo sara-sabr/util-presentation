@@ -1,6 +1,6 @@
 ---
 layout: revealjs
-permalink: /presentation.html
+permalink: /presentation-scale.html
 ---
 
 <section id="markdown-slides" data-markdown="" 
@@ -9,6 +9,15 @@ permalink: /presentation.html
 		 data-separator-notes="^Note:">
 
 </section>
+
+<style>
+
+section#markdown-slides table {
+  width: 100%;
+  font-size: 20px;
+}
+
+</style>
 
 <script>
 
@@ -77,6 +86,7 @@ function getMarkdownLocation() {
   } 
   
   if (!validWhitelist) {
+    alert('Invalid markdown file provided.');
     return "";
   }
 
@@ -91,9 +101,5 @@ function getMarkdownLocation() {
 
 var mdFile = getMarkdownLocation();
 
-if (mdFile === "") {
-  document.getElementById("markdown-slides").removeAttribute("data-markdown"); 
-} else {
-  document.getElementById("markdown-slides").setAttribute("data-markdown", mdFile); 
-}
+document.getElementById("markdown-slides").setAttribute("data-markdown", mdFile); 
 </script>
