@@ -9,20 +9,20 @@
 	if (params.get("shownotes") !== null) {
 		Reveal.initialize({
 			pdfSeparateFragments: false,
-			showNotes: "separate-page",
-			width: "95%",
-			height: "95%"
+			showNotes: "separate-page"
 		});
 	} else if (params.get("print-pdf") !== null) {
 		Reveal.initialize({
-			pdfSeparateFragments: false,
-			width: "95%",
-			height: "95%"
+			pdfSeparateFragments: false
 		});
 	} else {
-		Reveal.initialize({
-			width: "95%",
-			height: "95%"
-		});
+		Reveal.initialize({});
 	}
+	
+	{%- if page.scalemode == true -%}
+		Reveal.configure({
+			width: "95%",
+			height: "95%"});
+	{%- endif -%}			
+	
 </script>
