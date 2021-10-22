@@ -12,35 +12,3 @@ url: "https://sara-sabr.github.io/"
 markdown: kramdown
 include: ["_pages"]
 exclude: ["wip-tec", "CONTRIBUTING.md", "cspell.json", "LICENSE", "link-check.js", "package.json", "package-lock.json", "README.md"]
-
-# i18n
-description:
-  en: This is a tool to host markdown presentations for the Strategy, Architecture and Business Relationship Directorate.
-  fr: Ceci est un outil pour héberger des présentations "markdown" pour le directorat Stratégie, Architecture et Relations d'affaires.
-home:
-  en: Home
-  fr: Accueil
-index:
-  en: home.html
-  fr: accueil.html
-language:
-  en: English
-  fr: Français
-title:
-  en: SABR Presentation Utility
-  fr: Utilitaire de présentation SARA
-viewOnGithub:
-  en: View on GitHub
-  fr: Voir sur GitHub
-writtenBy:
-  en: Written by
-  fr: Écrit par
-lastModified:
-  en: Last modified
-  fr: Dernière modification
-blogPosts:
-  en: Our Blog Posts
-  fr: Nos Billets
-notice:
-  en: All work found on this site are ideas and proposals from the IT Strategy team within ESDC. Content here does not represent the official stance of ESDC nor the Government of Canada at large.
-  fr: Tous les travaux présentés sur ce site sont des idées et des propositions de l'équipe de la stratégie informatique de EDSC. Le contenu présenté ici ne représente pas la position officielle de EDSC ni celle du gouvernement du Canada en général.
