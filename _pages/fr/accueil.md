@@ -17,9 +17,7 @@ Les modes suivants existent (classés par priorité) :
 
 Exemple utilisant les fichiers situés dans le dossier `presentation` du répertoire de projet:
 
-```html
-https://sara-sabr.github.io/util-presentation/presentation.html?markdown=/en/example.md
-```
+[https://sara-sabr.github.io/util-presentation/presentation.html?url=https://raw.githubusercontent.com/sara-sabr/ITStrategy/master/presentations/en/2019-11-12-OSS-Using.md](https://sara-sabr.github.io/util-presentation/presentation.html?url=https://raw.githubusercontent.com/sara-sabr/ITStrategy/master/presentations/en/2019-11-12-OSS-Using.md)
 
 Exemple utilisant un URL qualifé en paramètre:
 
