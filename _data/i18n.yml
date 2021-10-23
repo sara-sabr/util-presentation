@@ -32,3 +32,6 @@ notice:
 button:
   en: Submit
   fr: Soumettre
+qualifiedURL:
+  en: A qualified URL is required.
+  fr: Un lien valide est requis.

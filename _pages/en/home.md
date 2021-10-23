@@ -25,4 +25,6 @@ Example using a qualified URL parameter:
 
 [https://sara-sabr.github.io/util-presentation/presentation.html?url=https://raw.githubusercontent.com/sara-sabr/ITStrategy/master/presentations/en/2019-11-12-OSS-Using.md](https://sara-sabr.github.io/util-presentation/presentation.html?url=https://raw.githubusercontent.com/sara-sabr/ITStrategy/master/presentations/en/2019-11-12-OSS-Using.md)
 
+{% include url-form.html %}
+
 Note: This utility is powered by the [Reveal.js](https://revealjs.com/#/https://revealjs.com/#/) and [Jekyll](https://jekyllrb.com/) open source projects.
